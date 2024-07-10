@@ -36,11 +36,6 @@ const questions = [
     message: 'What sources did you use for your application?',
 },
 
-{
-    type: 'input',
-    name: 'License',
-    message: 'What license do you want to use?',
-},
 ];
 
 // TODO: Create a function to write README file
