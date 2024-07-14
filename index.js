@@ -60,7 +60,14 @@ const questions = [
     type: 'input',
     name: 'email',
     message: 'Enter your email address:',
+},
+
+{
+    type: 'input',
+    name: 'github',
+    message: 'Enter your GitHub username:',
 }
+
 ];
 
 // Create a function to write README file
@@ -76,10 +83,10 @@ function writeToFile(fileName, data) {
 
 // Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then((response) =>
+    inquirer.prompt(questions).then((response) => {
         const markdown = generateMarkdown(response);
     writeToFile('README.md', markdown);
-    );
+    });
 };
 
 // Function call to initialize app
