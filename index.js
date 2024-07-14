@@ -27,7 +27,7 @@ const questions = [
 
 {
     type: 'input',
-    name: 'Usage',
+    name: 'appLink',
     message: 'Provide the link to your deployed application:'
 },
 
@@ -56,6 +56,11 @@ const questions = [
     choices: ['MIT', 'None'],
 },
 
+{
+    type: 'input',
+    name: 'email',
+    message: 'Enter your email address:',
+}
 ];
 
 // Create a function to write README file
