@@ -38,7 +38,7 @@ const questions = [
 
 ];
 
-// TODO: Create a function to write README file
+// Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data), (err) => {
        if (err) {
@@ -49,7 +49,7 @@ function writeToFile(fileName, data) {
     });
 }
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((response) =>
         const markdown = generateMarkdown(response);
