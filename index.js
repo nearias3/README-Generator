@@ -20,6 +20,13 @@ const questions = [
 
 {
     type: 'input',
+    name: 'installation',
+    message: 'Provide installation instructions:',
+},
+
+
+{
+    type: 'input',
     name: 'Usage',
     message: 'Provide the link to your deployed application:'
 },
@@ -32,8 +39,21 @@ const questions = [
 
 {
     type: 'input',
-    name: 'Credits',
+    name: 'contributing',
     message: 'What sources did you use for your application?',
+},
+
+{
+    type: 'input',
+    name: 'tests',
+    message: 'Provide test instructions:',
+},
+
+{
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license for your project:',
+    choices: ['MIT', 'None'],
 },
 
 ];
