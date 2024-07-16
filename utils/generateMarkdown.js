@@ -2,9 +2,8 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return `## License
-
-    This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).`;
+    return `
+  This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).`;
   } else {
     return "";
   }
@@ -53,8 +52,6 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ## Usage
-  ${data.usage}
-
   To access the deployed application, click the following link: [${data.appLink}]
 
   ![Screenshot](${data.screenshot})
