@@ -2,7 +2,9 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+    return `## License
+
+    This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).`;
   } else {
     return "";
   }
@@ -42,7 +44,6 @@ function generateMarkdown(data) {
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
@@ -57,9 +58,6 @@ function generateMarkdown(data) {
   To access the deployed application, click the following link: [${data.appLink}]
 
   ![Screenshot](${data.screenshot})
-
-  ## Credits
-  ${data.credits}
 
   ${licenseSection}
 
