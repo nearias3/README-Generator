@@ -72,7 +72,7 @@ const questions = [
 
 // Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data), (err) => {
+    fs.writeFile(fileName, data, (err) => {
        if (err) {
         console.error(err);
        } else {
@@ -83,11 +83,11 @@ function writeToFile(fileName, data) {
 
 // Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then((response) => {
-        const markdown = generateMarkdown(response);
+    inquirer.prompt(questions).then((answers) => {
+        const markdown = generateMarkdown(answers);
     writeToFile('README.md', markdown);
     });
-};
+}
 
 // Function call to initialize app
 init();
