@@ -14,11 +14,20 @@
 
   ## Installation
   
-  To install, please make a copy of this code in your local repository.
+  To get started, follow these steps:
+
+  1. Clone the repository:
+        'git clone https://github.com/nearias3/README-GENERATOR.git'
+  2. Navigate to your repository, then install the dependencies:
+        'npm install'
+  3. Run the application
+        'node index.js'
 
   ## Usage
 
   ![Screenshot](./images/Screenshot.png)
+
+  [Click Here To View The Video Walkthrough](https://drive.google.com/file/d/1XyNNh-SCSZhAnqtn0VftoEPLwXyU7HkZ/view?usp=sharing)
 
   ## License
     
